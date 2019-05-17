@@ -1,14 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninjacrab.PersistentWindows.WpfShell", "Ninjacrab.PersistentWindows.WpfShell\Ninjacrab.PersistentWindows.WpfShell.csproj", "{4EA12EC8-B50F-4DEA-AA7D-85A5F4C81F83}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FA5C1FB9-45F3-434F-9176-71A2D8EDA5B2}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninjacrab.PersistentWindows.Common", "Ninjacrab.PersistentWindows.Common\Ninjacrab.PersistentWindows.Common.csproj", "{4CC8B3FB-214B-42AB-8AAE-E7DC5E266EF0}"
 EndProject
@@ -35,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99CBBD1A-4BA4-49F4-A5DA-54861574471B}
 	EndGlobalSection
 EndGlobal

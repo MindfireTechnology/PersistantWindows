@@ -36,6 +36,10 @@
     <ApplicationIcon>..\Resources\Oxygen-Icons.org-Oxygen-Status-media-playlist-repeat.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ManagedWinapi, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Resources\ManagedWinApi\ManagedWinapi.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -96,7 +100,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\packages\ManagedWinapi.0.3\ManagedWinapiNativeHelper.dll">
+    <Content Include="..\..\Resources\ManagedWinApi\ManagedWinapiNativeHelper.dll">
       <Link>ManagedWinapiNativeHelper.dll</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

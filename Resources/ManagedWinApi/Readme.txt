@@ -1,0 +1,1 @@
+This package has only one NuGet release and it is malformed. The DLL's are therefore referenced from this folder.
