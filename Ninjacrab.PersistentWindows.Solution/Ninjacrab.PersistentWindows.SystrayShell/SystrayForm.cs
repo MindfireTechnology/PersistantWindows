@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Ninjacrab.PersistentWindows.Common;
 using Ninjacrab.PersistentWindows.WpfShell;
 
 namespace Ninjacrab.PersistentWindows.SystrayShell
@@ -8,8 +9,11 @@ namespace Ninjacrab.PersistentWindows.SystrayShell
     {
         public MainWindow MainView { get; set; }
 
-        public SystrayForm()
+        private PersistentWindowProcessor m_persistentWindowProcessor;
+
+        public SystrayForm(PersistentWindowProcessor persistentWindowProcessor)
         {
+            m_persistentWindowProcessor = persistentWindowProcessor;
             InitializeComponent();
         }
 
@@ -27,6 +31,8 @@ namespace Ninjacrab.PersistentWindows.SystrayShell
             {
                 this.MainView.Show();
             }
+
+            //m_persistentWindowProcessor.BeginRestoreApplicationsOnCurrentDisplays();
         }
 
         private void ExitToolStripMenuItemClickHandler(object sender, EventArgs e)
